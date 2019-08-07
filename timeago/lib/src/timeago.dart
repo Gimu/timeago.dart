@@ -1,12 +1,11 @@
 import 'package:timeago/src/messages/en_messages.dart';
-import 'package:timeago/src/messages/es_messages.dart';
+import 'package:timeago/src/messages/de_messages.dart';
 import 'package:timeago/src/messages/lookupmessages.dart';
+import 'package:intl/intl.dart' show DateFormat;
 
 Map<String, LookupMessages> _lookupMessagesMap = {
   'en': EnMessages(),
-  'en_short': EnShortMessages(),
-  'es': EsMessages(),
-  'es_short': EsShortMessages(),
+  'de': DeMessages(),
 };
 
 /// Sets a [locale] with the provided [lookupMessages] to be available when
@@ -75,7 +74,9 @@ String format(DateTime date,
     result = messages.aDay(hours.round());
   else if (days < 30)
     result = messages.days(days.round());
-  else if (days < 60)
+  else
+    return DateFormat.MMMd(_locale).format(date); // Show date instead if more than a month
+  /*else if (days < 60)
     result = messages.aboutAMonth(days.round());
   else if (days < 365)
     result = messages.months(months.round());
@@ -83,6 +84,7 @@ String format(DateTime date,
     result = messages.aboutAYear(months.round());
   else
     result = messages.years(years.round());
+    */
 
   return [prefix, result, suffix]
       .where((str) => str != null && str.isNotEmpty)
