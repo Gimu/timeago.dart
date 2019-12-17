@@ -5,11 +5,11 @@ class FrMessages implements LookupMessages {
   String prefixFromNow() => "d'ici";
   String suffixAgo() => '';
   String suffixFromNow() => '';
-  String lessThanOneMinute(int seconds) => "moins d'une minute";
-  String aboutAMinute(int minutes) => 'environ une minute';
-  String minutes(int minutes) => 'environ $minutes minutes';
-  String aboutAnHour(int minutes) => 'environ une heure';
-  String hours(int hours) => '$hours heures';
+  String lessThanOneMinute(int seconds) => "moins d'une min";
+  String aboutAMinute(int minutes) => 'environ une min';
+  String minutes(int minutes) => 'environ $minutes min';
+  String aboutAnHour(int minutes) => 'environ une hr';
+  String hours(int hours) => '$hours hrs';
   String aDay(int hours) => 'environ un jour';
   String days(int days) => 'environ $days jours';
   String aboutAMonth(int days) => 'environ un mois';

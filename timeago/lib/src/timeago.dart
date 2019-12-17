@@ -1,11 +1,25 @@
 import 'package:timeago/src/messages/en_messages.dart';
 import 'package:timeago/src/messages/de_messages.dart';
+import 'package:timeago/src/messages/ja_messages.dart';
+import 'package:timeago/src/messages/es_messages.dart';
+import 'package:timeago/src/messages/pt_br_messages.dart';
+import 'package:timeago/src/messages/fr_messages.dart';
+import 'package:timeago/src/messages/vi_messages.dart';
+import 'package:timeago/src/messages/zh_messages.dart';
+import 'package:timeago/src/messages/zh_cn_messages.dart';
 import 'package:timeago/src/messages/lookupmessages.dart';
 import 'package:intl/intl.dart' show DateFormat;
 
 Map<String, LookupMessages> _lookupMessagesMap = {
   'en': EnMessages(),
   'de': DeMessages(),
+  'ja': JaMessages(),
+  'es': EsMessages(),
+  'pt': PtBrMessages(),
+  'fr': FrMessages(),
+  'vi': ViMessages(),
+  'zh_tw': ZhMessages(),
+  'zh_cn': ZhCnMessages()
 };
 
 /// Sets a [locale] with the provided [lookupMessages] to be available when
