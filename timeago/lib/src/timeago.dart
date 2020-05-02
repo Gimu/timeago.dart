@@ -5,6 +5,7 @@ import 'package:timeago/src/messages/es_messages.dart';
 import 'package:timeago/src/messages/pt_br_messages.dart';
 import 'package:timeago/src/messages/fr_messages.dart';
 import 'package:timeago/src/messages/vi_messages.dart';
+import 'package:timeago/src/messages/ru_messages.dart';
 import 'package:timeago/src/messages/zh_messages.dart';
 import 'package:timeago/src/messages/zh_cn_messages.dart';
 import 'package:timeago/src/messages/lookupmessages.dart';
@@ -18,6 +19,7 @@ Map<String, LookupMessages> _lookupMessagesMap = {
   'pt': PtBrMessages(),
   'fr': FrMessages(),
   'vi': ViMessages(),
+  'ru': RuMessages(),
   'zh_tw': ZhMessages(),
   'zh_cn': ZhCnMessages()
 };
