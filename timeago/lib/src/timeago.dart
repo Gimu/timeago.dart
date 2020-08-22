@@ -11,13 +11,18 @@ import 'package:timeago/src/messages/zh_cn_messages.dart';
 import 'package:timeago/src/messages/lookupmessages.dart';
 import 'package:intl/intl.dart' show DateFormat;
 
+import 'messages/id_messages.dart';
+import 'messages/tr_messages.dart';
+
 Map<String, LookupMessages> _lookupMessagesMap = {
   'en': EnMessages(),
   'de': DeMessages(),
   'ja': JaMessages(),
   'es': EsMessages(),
+  'id': IdMessages(),
   'pt': PtBrMessages(),
   'fr': FrMessages(),
+  'tr': TrMessages(),
   'vi': ViMessages(),
   'ru': RuMessages(),
   'zh_tw': ZhMessages(),
